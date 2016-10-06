@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>DropBox</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+  </head>
+
+  <body>
+
+    
+<link class="cssdeck" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" class="cssdeck">
+
+<div class="" id="loginModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Drop Box</h3>
+  </div>
+  <div class="modal-body">
+    <div class="well">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+        <li><a href="#create" data-toggle="tab">Create Account</a></li>
+      </ul>
+
+      <div id="myTabContent" class="tab-content">
+
+        <div class="tab-pane active in" id="login" >
+          <form class="form-horizontal" action='' method="POST">
+            <fieldset>
+              <div id="legend">
+                <legend class="">Login</legend>
+              </div>
+
+              <div class="control-group">
+                <!-- Username -->
+                <label class="control-label"  for="username">Email</label>
+                <div class="controls">
+                  <input type="text" id="useremail" name="useremail" placeholder="" class="input-xlarge" required="required">
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <!-- Password-->
+                <label class="control-label" for="password">Password</label>
+                <div class="controls">
+                  <input type="password" id="password" name="password" placeholder="" class="input-xlarge" required="required">
+                </div>
+              </div>
+              
+              
+              <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                  <button type="button" id="btn_login" class="btn btn-success">Login</button>
+                  <p id="LogError" style="color:red; padding-top: 10px;"></p>
+                </div>
+
+              </div>
+
+            </fieldset>
+          </form>                
+        </div>
+
+        <div class="tab-pane fade" id="create">
+          <form id="tab">
+            <label>Email</label>
+            <input id="useremailReg" type="text" value="" class="input-xlarge" required="required">
+            <label>Username</label>
+            <input id="usernameReg" type="text" value="" class="input-xlarge" required="required">
+            <label>Password</label>
+            <input id="userpassReg" type="password" value="" class="input-xlarge" required="required">
+            <label>Confirm Password</label>
+            <input id="ConUserpassReg" type="password" value="" class="input-xlarge" required="required">
+            
+            <div>
+              <button type="button" id="btn_register" class="btn btn-primary">Create Account</button>
+              <p id="RegError" style="color:red; padding-top: 10px;"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+  <script src="js/login.js"></script>
+  </body>
+</html>
